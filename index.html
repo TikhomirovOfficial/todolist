@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/latest/js.cookie.min.js"></script>
+    <title>Todo</title>
+</head>
+<body>
+    <div class="createTaskMobile">
+        <div class="btn-createTask-mobile">
+            <i class="bi bi-plus-lg btn-new-mobile"></i>
+        </div>
+        <div class="new-task-mobile">
+            <input type="text">
+            <i class="bi bi-plus-lg btn-new_mob"></i>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11 m-auto">
+
+                <div class="todo-wrapper m-auto">
+                    <h2 class="title">
+                        TaskList
+                    </h2>
+                    <div class="createTask">
+                        <input type="text" class="task-input" placeholder="New task">
+                        <div class="new-task-block">
+                            <i class="bi bi-plus-lg btn-new"></i>
+                        </div>
+                    </div>
+                    <div class="inProcess-do">
+                        <div class="title-do-type">
+                            In progress
+                        </div>
+                        <div class="todo-list-process">
+                        </div>
+                    </div>
+                    <div class="completed-do">
+                        <div class="title-do-type">
+                            Completed
+                        </div>
+                        <div class="todo-list-completed">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="toDo.js"></script>
+</html>
