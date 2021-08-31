@@ -12,7 +12,8 @@ function checkTodo() {
         Cookies.set('todo', {
             progress: [],
             completed: []
-        })
+        }, 
+        { expires: Infinity })
         $('.inProcess-do').html(`<img width="270" src="nottask.png" alt="" class="notaskPict">`)
     }
 }
@@ -108,7 +109,8 @@ function updateCookies() {
     Cookies.set('todo', {
         progress: progressArray,
         completed: completedArray
-    })
+    },
+   { expires: Infinity })
 }
 function addTodo() {
     textTask = $('.task-input').val()
